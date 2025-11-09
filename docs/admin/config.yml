@@ -2,20 +2,23 @@ backend:
   name: github
   repo: hello-snamy/test4
   branch: main
-  # 👇 Custom Auth Gateway (your own backend)
-  base_url: http://173.249.49.45:9050
-  auth_endpoint: /auth/github
-
-media_folder: "static/uploads"
-public_folder: "/uploads"
-
+  base_url: https://suresh-issue-82.dcycleproject.org
+  auth_endpoint: /auth/github/repo/6910776f8e8ffd15e925ffb1
+media_folder: static/uploads
+public_folder: /uploads
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: blog
+    label: Blog
+    folder: content/blog
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
