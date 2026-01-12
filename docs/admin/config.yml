@@ -1,8 +1,9 @@
 backend:
   name: github
   repo: hello-snamy/test4
-  base_url: https://suresh-issue-82.dcycleproject.org
-  auth_endpoint: /auth/github/repo/695e898ca6315ef410f82963
+  base_url: https://app.staticauth.com
+  auth_endpoint: /auth/github/repo/6964e9618a3239f204716fd4
+  branch: main
 media_folder: static/uploads
 public_folder: /uploads
 collections:
